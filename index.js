@@ -3,15 +3,11 @@ const path = require('path');
 const morgan = require('morgan');
 const app = express();
 
-
-
  //midlewares
  app.use(morgan('dev'));// monitorias las peticiones
  app.use(express.json()); // peticiones en formato json
  
 
-
- 
  // Routes
  //app.use('/api/',require('./routes/movies'));
 app.use('/api/',require('./routes/movies'));
